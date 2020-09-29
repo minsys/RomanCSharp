@@ -100,6 +100,15 @@ namespace Roman.UnitTest
         }
 
         [Fact]
+        public void GivenInteger1to5000000()
+        {
+            for (int i = 0; i < 5000000; ++i)
+            {
+                string romanNumber = i.ToRoman();
+            }
+        }
+
+        [Fact]
         public void CompareToThirdParty()
         {
             for (int i = 1; i < 500; ++i)
